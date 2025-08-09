@@ -40,6 +40,7 @@
         .three-column-container {
             /* A container to hold the three boxes */
             padding: 20px;
+            font-size: 8vw;
             text-align: center;
         }
 
