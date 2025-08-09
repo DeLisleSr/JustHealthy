@@ -31,10 +31,10 @@
 
         .text-content {
             color: white;
-            font-size: 5vw;
+            font-size: 8vw;
             text-align: center;
             z-index: 1;
-            text-shadow: 2px 2px 4px #000000;
+            text-shadow: 2px 2px 4px #FF0000;
         }
 
         .three-column-container {
