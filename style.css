@@ -1,0 +1,65 @@
+     /* All of your CSS is in here now */
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f0f0f0; /* A light grey background for the rest of the page */
+        }
+        
+        .animated-container {
+            width: 100%;
+            height: 50vh;
+            background-image: url('https://media.giphy.com/media/l4pTfx2qLsTgVpYul6/giphy.gif');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .animated-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .text-content {
+            color: white;
+            font-size: 5vw;
+            text-align: center;
+            z-index: 1;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .three-column-container {
+            /* A container to hold the three boxes */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .three-column-flex {
+            /* This is the container for the three boxes */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px; /* Limits the width on large screens */
+            margin: 0 auto; /* Centers the container */
+            border: 1px solid black;
+        }
+        
+        .box {
+            /* This styles each individual box */
+            flex-grow: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box + .box {
+            border-left: 1px solid black;
+        }
