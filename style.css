@@ -41,6 +41,9 @@
             /* A container to hold the three boxes */
             padding: 20px;
             font-size: 8vw;
+             h1 {
+            font-size: 9vw;
+}
             text-align: center;
         }
 
@@ -53,7 +56,7 @@
             margin: 0 auto; /* Centers the container */
             border: 1px solid black;
         }
-        
+
         .box {
             /* This styles each individual box */
             flex-grow: 1;
@@ -64,3 +67,15 @@
         .box + .box {
             border-left: 1px solid black;
         }
+
+
+
+
+
+
+
+
+
+
+
+
