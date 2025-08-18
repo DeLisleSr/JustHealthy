@@ -27,9 +27,9 @@
 .ez { bottom: 2vw; right: 2vw; }
 .hd { position: fixed; bottom: 2vw; left: 50%; transform: translateX(-50%); }
 .jumpTop { position: fixed; bottom: 18vw; left: 50%; transform: translateX(-50%); display: none; }
-.vase {float: right;margin-left:10px;}
+.vase {float: right;margin-left:0px;}
 .FormOfAges {width:90vw; padding:10px; font-size: .8em; border:2px solid black; background-color:white; color:black; cursor:pointer; text-align:center;}
-.pos-image {float: left;margin-right: 0px}     
+.pos-image {float: left;margin-right: 15px}     
 .delisle {position: absolute;bottom: -30vw;right: 30vw;width: 180px;border: 0px solid ;z-index: 10;}
 .poscontainer {position: relative;width: 100%;margin: 50px auto;border: 1px solid red;}
 .tonysTable {width: 100%;border-collapse: collapse;}
@@ -50,12 +50,8 @@
 
 </style></head><body bgcolor="white" text="black">
 
-
 <!--- Top Table --->
 <table border="0" class="tonysTable"><tr><td style="vertical-align:top;">
-
-
-
 
 <!--- Top Banner Table --->
 <table style="width:100%;height:10vh;background-image:url('look/home.png');background-size:cover;background-position:center;border:0px double black;text-align:center;"><tr><td style="vertical-align:middle;color:black;font-size:5vw;text-align:center;text-shadow:2px 2px 1px #ffffff;">    
@@ -64,8 +60,6 @@ Foundations Of Universal<br>Health Care
 
 <!--- Hovering Logo Image--->
 <div class="poscontainer"><a href="index.html"><img class="delisle" src="look/sprout.png" style="width:18vh;height:18vh;"></a>
-
-
 
 <!--- Select Age Form--->
 <form align="center"><select id="age-select" class="FormOfAges" onchange="window.location.href=this.value;">
@@ -181,12 +175,12 @@ Foundations Of Universal<br>Health Care
 <!--- Left Image With Wrap--->
 <a href="index.html">
 <img class="pos-image" src="look/unity.png" alt="A giving of efforts." style="width:18vh;height:18vh;"></a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<span style="text-decoration: underline wavy;font-size: 4vw">We're Sorry!</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-This page is a work-site "Under Construction!" We should have this area full of details soon enough. Please check our homepage for our most recent updated changes currently on prpgress.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="text-decoration: underline wavy;font-size: 4vw">We're&nbsp;Sorry!</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+This page is a work-site <span style="text-decoration: underline wavy;font-size:3vw; color:red;">
+"Under&nbsp;Construction."</span> We should have this area full of details soon enough. Please check our <a href="index.html">homepage</a> for the most recent updates or changes currently in progress. They will post there as things surely come together.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="index.html"><img class="vase" src="look/workin.gif" alt="United in love of health!" style="width:40%;height: 18vh;"></a>
-Get the latest information and most recent pages available, and also inquire how you can get involved or participate yourself by providing facts or information that you know would be most helpful to record, to
-<a href="index.html">homepage.</a> It's going to take the work of many to conclude our efforts. and we appreciate your patience with these great efforts undertaken.
+Get the latest information on current pages available, during this construction of completion. Also, you can inquire or contact us there about how you can get involved or participate by providing updated facts to our <a href="index.html">homepage,</a> that you know would be most helpful or more accurate to this record. It's going to take the work of many to conclude our efforts here, and we appreciate your patience with these great efforts undertaken.
 
 <!--- Subjective Texts--->
 <h2 id="ex" align="center">
@@ -218,7 +212,8 @@ The Exercising:</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <br><br><br><br><br>
 </td></tr></table>
 
-<table width="80%" border="0"><tr><td><br></td></tr></table>
+
+<!--- Top Drop Menu Links --->
 
 <div class="resource">
     <button class="resource-button">Resources:</button>                
@@ -253,4 +248,4 @@ The Exercising:</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <!--- My Ghost Link Appearance --->
 <script>document.addEventListener('DOMContentLoaded', function() {var jumpTopButton = document.querySelector('.jumpTop');window.addEventListener('scroll', function() {if (window.scrollY > 200) {jumpTopButton.style.display = 'block';} else {jumpTopButton.style.display = 'none';}}); jumpTopButton.addEventListener('click', function(e) {e.preventDefault();window.scrollTo({ top: 0,behavior: 'smooth'});});});</script>
-</script></body></html>
+</body></html>
