@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Page title</title>
+
+<style>
+
+/* A.D. ID's */
+.swirly{width: 100%; height: 80vh; border: 1px; background-image: url('look/swirly.gif'); background-size: cover; background-position: center;}
+.hopAround {position: fixed;background-color: red;color: white;padding: 1vw 1.5vw;border-radius: 50%;text-decoration: none;font-size: 2.6vw;box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.5);transition: background-color 0.3s ease, box-shadow 0.3s ease;}
+.hopAround:hover {box-shadow: 0 0 1vw yellow, 0 0 2vw rgba(255, 255, 0, 0.8);}
+.jumpTop { position: fixed; bottom: 18vw; left: 50%; transform: translateX(-50%); display: none; }
+.ex { bottom: 10vw; left: 20vw; }
+.in { bottom: 10vw; right: 20vw; }
+.mh { bottom: 2vw; left: 2vw; }
+.ez { bottom: 2vw; right: 2vw; }
+.hd { position: fixed; bottom: 2vw; left: 50%; transform: translateX(-50%); }
+
+#dynamic-headline {text-align: center;height: 1.5em;font-size: 2.2rem;font-weight: bold;color:;transition: opacity 0.5s ease-in-out;}
+@keyframes jump {0% { transform: translateY(0); }50% { transform: translateY(-20px); }100% { transform: translateY(0); }}
+@keyframes spin {from { transform: rotate(0deg); }to { transform: rotate(360deg); }}
+@keyframes size-change {0%, 100% { transform: scale(1); }50% { transform: scale(1.5); }}
+.jump-letter {animation: jump 1s infinite ease-out;}
+.spin-letter {animation: spin 2s infinite linear;}
+.size-letter {animation: size-change 1.5s infinite ease-in-out;}
+.word-container {font-size: 4rem;font-weight: bold;letter-spacing: 0.2rem;}
+.word-container span {display: inline-block;}
+
+</style>
+
+
+
+
+
+</head><body>
+<table class="swirly"><tr><td align="center" style="vertical-align:top">
+
+
+
+<span class="container" id="dynamic-headline"></span>
+
+
+<br>
+
+
+
+<span class="word-container" id="animated-text">Welcome!</span>
+
+</td></tr></table>
+
+<!--- Tonys Bottom Links --->
+<a href="#top" class="hopAround jumpTop">&nbsp;&nbsp;Back Up Top!&nbsp;&nbsp;</a>
+<a href="#ex" class="hopAround ex">&nbsp;&nbsp;Expectations&nbsp;&nbsp;</a>
+<a href="#in" class="hopAround in">&nbsp;&nbsp;&nbsp;&nbsp;Interests&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<a href="#mh" class="hopAround mh">&nbsp;&nbsp;Foundation&nbsp;&nbsp;</a>
+<a href="#hd" class="hopAround hd">&nbsp;&nbsp;Active Links&nbsp;&nbsp;</a>
+<a href="#ez" class="hopAround ez">&nbsp;&nbsp;&nbsp;&nbsp;Our Purpose&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+<!--- My Ghost Link/Headliner/Dancing Text Appearances --->
+<script>document.addEventListener('DOMContentLoaded', function() {var jumpTopButton = document.querySelector('.jumpTop');window.addEventListener('scroll', function() {if (window.scrollY > 200) {jumpTopButton.style.display = 'block';} else {jumpTopButton.style.display = 'none';}}); jumpTopButton.addEventListener('click', function(e) {e.preventDefault();window.scrollTo({ top: 0,behavior: 'smooth'});});});</script>
+<script>const headlines = ["Healthy Facts!","Age Relevant","By The Roots","A Living Website","Health Is Wealth","We Are Evolving","Work In Progress","Lasting Rewards","Studying Seeds",];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
+<script>const textElement = document.getElementById('animated-text');const text = textElement.textContent;textElement.textContent = '';const animations = ['size-letter', 'spin-letter', 'jump-letter', 'spin-letter'];for (let i = 0; i < text.length; i++) {let span = document.createElement('span');span.textContent = text[i] === ' ' ? '\u00A0' : text[i];const animationClass = animations[i % animations.length];span.className = animationClass;textElement.appendChild(span);}</script>
+</body>
+</html>
