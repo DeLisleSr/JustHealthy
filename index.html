@@ -211,7 +211,7 @@
             </select></form>
 
 <!--- Hovering Star And Dancing Welcome --->
-<table width="98%" class="delisl" border="0"><tr><td align="center">
+<table width="100%" class="delisle" border="0"><tr><td align="center">
 <div class="word-container" id="animated-text">Welcome!</div>
 </td></tr></table>
 
@@ -326,7 +326,7 @@ Thank You:</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 <!--- My Ghost Link/Headliner/Dancing Text Appearances --->
-<script>document.addEventListener('DOMContentLoaded', function() {var jumpTopButton = document.querySelector('.jumpTop');window.addEventListener('scroll', function() {if (window.scrollY > 200) {jumpTopButton.style.display = 'block';} else {jumpTopButton.style.display = 'none';}}); jumpTopButton.addEventListener('click', function(e) {e.preventDefault();window.scrollTo({ top: 0,behavior: 'smooth'});});});</script>
-<script>const headlines = ["Healthy Facts!","Age Relevant","By The Roots","Work In Progress","A Living Website","We Are Evolving","Lasting Rewards","Healthy Is Wealthy",];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
+<script>const headlines = ["Healthy Facts!","Age Relevant","By The Roots","A Living Website","Health Is Wealth","We Are Evolving","Work In Progress","Lasting Rewards","Seed Study",];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
 <script>const textElement = document.getElementById('animated-text');const text = textElement.textContent;textElement.textContent = '';const animations = ['size-letter', 'spin-letter', 'jump-letter', 'spin-letter'];for (let i = 0; i < text.length; i++) {let span = document.createElement('span');span.textContent = text[i] === ' ' ? '\u00A0' : text[i];const animationClass = animations[i % animations.length];span.className = animationClass;textElement.appendChild(span);}</script>
+<script>document.addEventListener('DOMContentLoaded', function() {var jumpTopButton = document.querySelector('.jumpTop');window.addEventListener('scroll', function() {if (window.scrollY > 200) {jumpTopButton.style.display = 'block';} else {jumpTopButton.style.display = 'none';}}); jumpTopButton.addEventListener('click', function(e) {e.preventDefault();window.scrollTo({ top: 0,behavior: 'smooth'});});});</script>
 </body></html>
