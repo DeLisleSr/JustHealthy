@@ -41,6 +41,7 @@
 .FormOfAges{width:90vw; padding:10px; font-size:1em; border:2px solid white; background-color:black; color:white; cursor:pointer; text-align:center;}
 .unity{float:left; margin-right:15px;}     
 .peace{float:right; margin-left:0px;}
+.star{position:absolute; top:16vw; right:42vw; border:0px solid; z-index:5;}
 
 </style></head><body bgcolor="black" text="white">
 
@@ -53,6 +54,10 @@
 <table style="width:100%; height:10vw; background-image:url('look/scroll.gif'); background-size:cover; background-position:center; border:8px double white; text-align:center;"><tr><td style="color:black; text-shadow:4px 4px 2px #ffffff;">
 <span id="dynamic-headline"></span>
 </td></tr></table>
+
+<!--- Top Star Link --->
+<a href="aou.pdf" target="_blank">
+<img class="star"src="look/astar.png" alt="A Greater Foundation" style="width:10vh; height:10vh;"></a>
 
 <br><br>
 <!--- Food Pyramid Table --->
@@ -183,7 +188,7 @@ Thank You:</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <!--- The Ghost Bottom Link/Headliner/Dancing Text Appearances --->
 <script>document.addEventListener('DOMContentLoaded', function() {var jumpTopButton = document.querySelector('.jumpTop');window.addEventListener('scroll', function() {if (window.scrollY > 200) {jumpTopButton.style.display = 'block';} else {jumpTopButton.style.display = 'none';}}); jumpTopButton.addEventListener('click', function(e) {e.preventDefault();window.scrollTo({ top: 0,behavior: 'smooth'});});});</script>
-<script>const headlines = ["Healthy Facts!","Age Relevant","By The Roots","A Living Website","Health Is Wealth","We Are Evolving","Work In Progress","Lasting Rewards","Studying Seeds",];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
+<script>const headlines = ["Healthy Facts!","Age Relevant","By The Roots","A Living Website","Health Is Wealth","We Are Evolving","Workin' Progress","Lasting Rewards","Studying Seeds",];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
 <script>const textElement = document.getElementById('animated-text');const text = textElement.textContent;textElement.textContent = '';const animations = ['size-letter', 'spin-letter', 'jump-letter', 'spin-letter'];for (let i = 0; i < text.length; i++) {let span = document.createElement('span');span.textContent = text[i] === ' ' ? '\u00A0' : text[i];const animationClass = animations[i % animations.length];span.className = animationClass;textElement.appendChild(span);}</script>
 </body>
 </html>
