@@ -51,6 +51,15 @@
 .physical-content a{color:black; text-align:center; padding:1em 1.2em; text-decoration:none; display:block;}
 .physical-content a:hover{background-color:#ccc;}
 
+.mental{position:absolute; top:15%; right:6%;}
+.mental-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(128, 0, 0, 1.1); color:white; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
+.mental-button:hover{background:rgba(128, 0, 0, 0.2); box-shadow:0 0 2em black,0 0 2em #fff;transform: scale(1.1);}
+.mental-content{display:none; position:absolute; background-color:#fff; min-width:2em; box-shadow:0 1em 2em 0 rgba(0,0,0,0.2); z-index:10; margin-top:1em;}
+.mental:hover .mental-content{display:block;}
+.mental-content a{color:black; text-align:center; padding:1em 1.2em; text-decoration:none; display:block;}
+.mental-content a:hover{background-color:#ccc;}
+
+
 </style></head><body bgcolor="black" text="white">
 
 
@@ -63,41 +72,25 @@
 <span id="dynamic-headline"></span>
 </td></tr></table>
 
-
-
-
-
+<!--- Tonys Top Fancy Menus --->
 <span class="physical"><button class="physical-button">Physical:</button><span class="physical-content">
         <a href="uc.html">WorldView</a>
         <a href="uc.html">Local Gov</a>
         <a href="uc.html">Schools</a>
         <a href="uc.html">Hobies</a>
         <a href="uc.html">Unity</a></span></span>
-
-
-
-
-
-
-
-
+<span class="mental"><button class="mental-button">Mental:</button><span class="mental-content">
+        <a href="uc.html">WorldWide</a>
+        <a href="uc.html">Locally</a>
+        <a href="uc.html">Lesson</a>
+        <a href="uc.html">Games</a>
+        <a href="uc.html">Solo</a></span></span>
 
 <!--- Top Star Link --->
 <a href="aou.pdf" target="_blank">
 <img class="star"src="look/astar.png" alt="A Greater Foundation" style="width:10vh; height:10vh;"></a>
 
-
-
-
-
-
-
-
-
-
-
-
-<br><br>
+<br>
 <!--- Food Pyramid Table --->
 <table style="width:100%;height:52vh;background-image:url('look/healthy.png');background-size:cover;background-position:center;"><tbody>
 
