@@ -33,7 +33,6 @@
 .pointy {background-image: url('look/healthy.gif');background-size: cover;background-position: center;border: 0px;width: 100%;height: 80vh;}
 .star {position: absolute;bottom: 115vw;right:30vw;border: 0px solid ;z-index: 5;}
 .pos-image {float:left; margin-right:15px;}     
-.delisle {position: absolute;top: 674px;right: 10%;width: 18;color:red; border: 0px solid ;z-index: 10;}
 .poscontainer {position: relative;width: 80%;margin: 50px auto;border: 0px solid red;}
 .resource {position: absolute;top: 8em;right: 8%;}
 .resource-button {display: flex;align-items: center;justify-content: center;width: 10em;height: 3em;border-radius: 5em;background: rgba(128, 0, 0, 1.1);color: white;text-decoration: none;text-align: center;transition: all 0.3s ease;box-shadow: 0 0 1em rgba(0,0,0, 0.5);}
@@ -50,7 +49,7 @@
 .Curriculum-content a {color: black;text-align: center;padding: 1em 1.2em;text-decoration: none;display: block;}
 .Curriculum-content a:hover {background-color: #ccc;}
 #dynamic-headline {text-align: center;height: 1.5em;font-size: 2.0rem;font-weight: bold;color:;transition: opacity 0.5s ease-in-out;}
-.word-container {font-size: 4rem;font-weight: bold;letter-spacing: 0.2rem;}
+.word-container {font-size: 4rem;color: red;font-weight: bold;letter-spacing: 0.2rem;}
 .word-container span {display: inline-block;}
 @keyframes jump {0% { transform: translateY(0); }50% { transform: translateY(-20px); }100% { transform: translateY(0); }}
 @keyframes spin {from { transform: rotate(0deg); }to { transform: rotate(360deg); }}
@@ -209,12 +208,11 @@
             <option value="uc.html">&nbsp;&nbsp;098 Years Wiser</option>
             <option value="uc.html">&nbsp;099 Years Wiser</option>
             <option value="uc.html">The Centurian!</option>
-            </select></form><br>
+            </select></form>
 
 <!--- Hovering Star And Dancing Welcome --->
-<table class="delisle" border="0"><tr><td>
-<div class="word-container" id="animated-text">Welcome!</div>
-</td></tr></table>
+<div class="word-container" id="animated-text" style="position: absolute;left: 10%;">Welcome!</div>
+
 
 <div class="poscontainer">
 <a href="aou.pdf" target="_blank">
@@ -328,6 +326,6 @@ Thank You:</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <!--- My Ghost Link/Headliner/Dancing Text Appearances --->
 <script>document.addEventListener('DOMContentLoaded', function() {var jumpTopButton = document.querySelector('.jumpTop');window.addEventListener('scroll', function() {if (window.scrollY > 200) {jumpTopButton.style.display = 'block';} else {jumpTopButton.style.display = 'none';}}); jumpTopButton.addEventListener('click', function(e) {e.preventDefault();window.scrollTo({ top: 0,behavior: 'smooth'});});});</script>
-<script>const headlines = ["Healthy Facts!","Under Construction.","A Living Website!","Work In Progress.","Healthy Facts!","We Are Evolving.","Enjoin The Rewards!","Prosper In Simplicity.",];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
+<script>const headlines = ["Healthy Facts!","Age Relevant","By The Roots","Work In Progress","A Living Website","We Are Evolving","Lasting Rewards","Healthy Is Wealthy",];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
 <script>const textElement = document.getElementById('animated-text');const text = textElement.textContent;textElement.textContent = '';const animations = ['size-letter', 'spin-letter', 'jump-letter', 'spin-letter'];for (let i = 0; i < text.length; i++) {let span = document.createElement('span');span.textContent = text[i] === ' ' ? '\u00A0' : text[i];const animationClass = animations[i % animations.length];span.className = animationClass;textElement.appendChild(span);}</script>
 </body></html>
