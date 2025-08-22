@@ -33,23 +33,23 @@
 .pointy {background-image: url('look/healthy.gif');background-size: cover;background-position: center;border: 0px;width: 100%;height: 80vh;}
 .star {position: absolute;bottom: 115vw;right:30vw;border: 0px solid ;z-index: 5;}
 .pos-image {float:left; margin-right:15px;}     
-.delisle {position: absolute;bottom: 28vw;right: 12vw;width: 18;color:red; border: 0px solid ;z-index: 10;}
+.delisle {position: absolute;bottom: 14%;right: 10%;width: 18;color:red; border: 0px solid ;z-index: 10;}
 .poscontainer {position: relative;width: 80%;margin: 50px auto;border: 0px solid red;}
-.resource {position: absolute;top: 8em;right: 3.1em;}
+.resource {position: absolute;top: 8em;right: 8%;}
 .resource-button {display: flex;align-items: center;justify-content: center;width: 10em;height: 3em;border-radius: 5em;background: rgba(128, 0, 0, 1.1);color: white;text-decoration: none;text-align: center;transition: all 0.3s ease;box-shadow: 0 0 1em rgba(0,0,0, 0.5);}
 .resource-button:hover {background: rgba(128, 0, 0, 0.2);box-shadow: 0 0 2em black, 0 0 2em #fff;transform: scale(1.1);}
 .resource-content {display: none;position: absolute;background-color: #fff;min-width: 2em;box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);z-index: 10;margin-top: 1em;}
 .resource:hover .resource-content {display: block;}
 .resource-content a {color: black;text-align: center;padding: 1em 1.2em;text-decoration: none;display: block;}
 .resource-content a:hover {background-color: #ccc;}
-.Curriculum {position: absolute;top: 8em;left: 3.1em;}
+.Curriculum {position: absolute;top: 8em;left: 8%;}
 .Curriculum-button {display: flex;align-items: center;justify-content: center;width: 10em;height: 3em;border-radius: 5em;background: rgba(128, 0, 0, 1.1);color: white;text-decoration: none;text-align: center;transition: all 0.3s ease;box-shadow: 0 0 1em rgba(0,0,0, 0.5);}
 .Curriculum-button:hover {background: rgba(128, 0, 0, 0.2);box-shadow: 0 0 2em black, 0 0 2em #fff;transform: scale(1.1);}
 .Curriculum-content {display: none;position: absolute;background-color: #fff;min-width: 2em;box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);z-index: 10;margin-top: 1em;}
 .Curriculum:hover .Curriculum-content {display: block;}
 .Curriculum-content a {color: black;text-align: center;padding: 1em 1.2em;text-decoration: none;display: block;}
 .Curriculum-content a:hover {background-color: #ccc;}
-#dynamic-headline {text-align: center;height: 1.5em;font-size: 2.2rem;font-weight: bold;color:;transition: opacity 0.5s ease-in-out;}
+#dynamic-headline {text-align: center;height: 1.5em;font-size: 2.0rem;font-weight: bold;color:;transition: opacity 0.5s ease-in-out;}
 .word-container {font-size: 4rem;font-weight: bold;letter-spacing: 0.2rem;}
 .word-container span {display: inline-block;}
 @keyframes jump {0% { transform: translateY(0); }50% { transform: translateY(-20px); }100% { transform: translateY(0); }}
@@ -328,6 +328,6 @@ Thank You:</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <!--- My Ghost Link/Headliner/Dancing Text Appearances --->
 <script>document.addEventListener('DOMContentLoaded', function() {var jumpTopButton = document.querySelector('.jumpTop');window.addEventListener('scroll', function() {if (window.scrollY > 200) {jumpTopButton.style.display = 'block';} else {jumpTopButton.style.display = 'none';}}); jumpTopButton.addEventListener('click', function(e) {e.preventDefault();window.scrollTo({ top: 0,behavior: 'smooth'});});});</script>
-<script>const headlines = ["Healthy Facts!","Under Construction.","A Living Website!","A Work In Progress.","Healthy Facts!","We Are Evolving.","Enjoin The Rewards!","Prosper In Simplicity.",];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
+<script>const headlines = ["Healthy Facts!","Under Construction.","A Living Website!","Work In Progress.","Healthy Facts!","We Are Evolving.","Enjoin The Rewards!","Prosper In Simplicity.",];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
 <script>const textElement = document.getElementById('animated-text');const text = textElement.textContent;textElement.textContent = '';const animations = ['size-letter', 'spin-letter', 'jump-letter', 'spin-letter'];for (let i = 0; i < text.length; i++) {let span = document.createElement('span');span.textContent = text[i] === ' ' ? '\u00A0' : text[i];const animationClass = animations[i % animations.length];span.className = animationClass;textElement.appendChild(span);}</script>
 </body></html>
