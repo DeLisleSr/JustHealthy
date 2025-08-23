@@ -14,52 +14,85 @@
 <meta name="twitter:title" content="A Website with a Healthy Purpose">
 <meta name="twitter:description" content="A curriculum of Health, for a lasting reality, not for profit but rather for you.">
 <meta name="twitter:image" content="https://healthyfacts.netlify.app/look/logo.gif">
+<title>Healthy Facts - Many Ages </title>
 
-<title>Healthy Facts - Under Construction</title>
 <style>
-
 /* A.D. ID's */
-.hopAround {position: fixed;background-color: red;color: white;padding: 1vw 1.5vw;border-radius: 50%;text-decoration: none;font-size: 2.6vw;box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.5);transition: background-color 0.3s ease, box-shadow 0.3s ease;}
-.hopAround:hover {box-shadow: 0 0 1vw yellow, 0 0 2vw rgba(255, 255, 0, 0.8);}
-.ex { bottom: 10vw; left: 20vw; }
-.in { bottom: 10vw; right: 20vw; }
-.mh { bottom: 2vw; left: 2vw; }
-.ez { bottom: 2vw; right: 2vw; }
-.hd { position: fixed; bottom: 2vw; left: 50%; transform: translateX(-50%); }
-.jumpTop { position: fixed; bottom: 18vw; left: 50%; transform: translateX(-50%); display: none; }
-.vase {float: right;margin-left:0px;}
-.FormOfAges {width:90vw; padding:10px; font-size: .8em; border:2px solid black; background-color:white; color:black; cursor:pointer; text-align:center;}
-.pos-image {float: left;margin-right: 15px}     
-.delisle {position: absolute;bottom: -30vw;right: 30vw;width: 180px;border: 0px solid ;z-index: 10;}
-.poscontainer {position: relative;width: 100%;margin: 50px auto;border: 1px solid red;}
-.tonysTable {width: 100%;border-collapse: collapse;}
-.resource {position: absolute;top: 4.8em;right: 1.0em;}
-.resource-button {display: flex;align-items: center;justify-content: center;width: 10em;height: 3em;border-radius: 5em;background: rgba(255, 255, 255, 2);color: black;text-decoration: none;text-align: center;transition: all 0.3s ease;box-shadow: 0 0 1em rgba(0,0,0, 2);}
-.resource-button:hover {background: rgba(128, 0, 0, 0.3);box-shadow: 0 0 2em black, 0 0 2em #fff;transform: scale(1.1);}
-.resource-content {display: none;position: absolute;background-color: #fff;min-width: 2em;box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);z-index: 1;margin-top: 1em;}
-.resource:hover .resource-content {display: block;}
-.resource-content a {color: black;text-align: center;padding: 1em 1.2em;text-decoration: none;display: block;}
-.resource-content a:hover {background-color: #ccc;}
-.Curriculum {position: absolute;top: 4.8em;left: 1em;}
-.Curriculum-button {display: flex;align-items: center;justify-content: center;width: 10em;height: 3em;border-radius: 5em;background: rgba(255, 255, 255, 2);color: black;text-decoration: none;text-align: center;transition: all 0.3s ease;box-shadow: 0 0 1em rgba(0,0,0, 2);}
-.Curriculum-button:hover {background: rgba(128, 0, 0, 0.3);box-shadow: 0 0 2em black, 0 0 2em #fff;transform: scale(1.1);}
-.Curriculum-content {display: none;position: absolute;background-color: #fff;min-width: 2em;box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);z-index: 1;margin-top: 1em;}
-.Curriculum:hover .Curriculum-content {display: block;}
-.Curriculum-content a {color: black;text-align: center; padding: 1em 1.2em;text-decoration: none;display: block;}
-.Curriculum-content a:hover {background-color: #ccc;}
+
+.swirly{width:100%; border:1px; background-image:url('look/home.png'); background-size:cover; background-position:center;}
+.hopAround{position:fixed; background-color:black; color:white; padding:1vw 1.5vw; border-radius:50%; text-decoration:none; font-size: 2.6vw; box-shadow:0 0 0.5vw rgba(0, 0, 0, 0.5); transition:background-color 0.3s ease, box-shadow 0.3s ease;}
+.hopAround:hover{box-shadow:0 0 1vw yellow, 0 0 2vw rgba(255, 255, 0, 0.8);}
+.jumpTop{position:fixed; bottom:18vw; left:50%; transform:translateX(-50%); display:none;}
+.ex {bottom:10vw; left:20vw;}
+.in {bottom:10vw; right:20vw;}
+.mh {bottom:2vw; left:2vw;}
+.ez {bottom:2vw; right:2vw;}
+.hd {position:fixed; bottom:2vw; left: 50%; transform:translateX(-50%);}
+
+#dynamic-headline{text-align:center; vertical-align:middle; height:1.5em; font-size:2.4rem; font-weight:bold; color:; transition:opacity 0.5s ease-in-out;}
+@keyframes jump{0%{transform:translateY(0);}50%{transform:translateY(-20px);}100%{transform: translateY(0);}}
+@keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+@keyframes size-change{0%,100%{transform:scale(1);}50%{transform:scale(1.5);}}
+.jump-letter{animation:jump 1s infinite ease-out;}
+.spin-letter{animation:spin 2s infinite linear;}
+.size-letter{animation:size-change 1.5s infinite ease-in-out;}
+.word-container{font-size: 1.6rem; color:green; font-weight:bold; letter-spacing:0.2rem;}
+.word-container span{display:inline-block;}
+.FormOfAges{width:70vw; padding:10px; font-size:1em; border:2px solid white; background-color:rgba(128, 0, 0, 1.1); color:white; cursor:pointer; text-align:center;}
+.unity{float:left; margin-right:15px;}     
+.peace{float:right; margin-left:0px;}
+.star{position:absolute; top:9vw; right:40vw; border:0px solid; z-index:5;}
+
+.physical{position:absolute; top:15%; left:6%;}
+.physical-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(128, 0, 0, 1.1); color:white; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
+.physical-button:hover{background:rgba(128, 0, 0, 0.2); box-shadow:0 0 2em black,0 0 2em #fff; transform:scale(1.1);}
+.physical-content{display:none; position:absolute; background-color:#fff; min-width:2em; box-shadow:0 1em 2em 0 rgba(0,0,0,0.2); z-index:10; margin-top:1em;}
+.physical:hover .physical-content{display:block;}
+.physical-content a{color:black; text-align:center; padding:1em 1.2em; text-decoration:none; display:block;}
+.physical-content a:hover{background-color:#ccc;}
+
+.mental{position:absolute; top:15%; right:6%;}
+.mental-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(128, 0, 0, 1.1); color:white; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
+.mental-button:hover{background:rgba(128, 0, 0, 0.2); box-shadow:0 0 2em black,0 0 2em #fff;transform: scale(1.1);}
+.mental-content{display:none; position:absolute; background-color:#fff; min-width:2em; box-shadow:0 1em 2em 0 rgba(0,0,0,0.2); z-index:10; margin-top:1em;}
+.mental:hover .mental-content{display:block;}
+.mental-content a{color:black; text-align:center; padding:1em 1.2em; text-decoration:none; display:block;}
+.mental-content a:hover{background-color:#ccc;}
+
 
 </style></head><body bgcolor="white" text="black">
 
-<!--- Top Table --->
-<table border="0" class="tonysTable"><tr><td style="vertical-align:top;">
 
-<!--- Top Banner Table --->
-<table style="width:100%;height:10vh;background-image:url('look/home.png');background-size:cover;background-position:center;border:0px double black;text-align:center;"><tr><td style="vertical-align:middle;color:black;font-size:5vw;text-align:center;text-shadow:2px 2px 1px #ffffff;">    
+<!--- Tonys Main Table Setup --->
+<table class="swirly"><tr><td align="center" style="vertical-align:top">
 
-Foundations Of Universal<br>Health Care
 
-<!--- Hovering Logo Image--->
-<div class="poscontainer"><a href="index.html"><img class="delisle" src="look/sprout.png" style="width:18vh;height:18vh;"></a>
+<!--- Top Table Headline Banner --->
+<table style="width:100%; height:10vw; background-image:url('look/z.gif'); background-size:cover; background-position:center; border:8px double white; text-align:center;"><tr><td style="color:black; text-shadow:4px 4px 2px #ffffff;">
+<span id="dynamic-headline"></span>
+</td></tr></table>
+
+<!--- Tonys Top Fancy Menus --->
+<span class="physical"><button class="physical-button">Physical:</button><span class="physical-content">
+        <a href="uc.html">WorldView</a>
+        <a href="uc.html">Local Gov</a>
+        <a href="uc.html">Schools</a>
+        <a href="uc.html">Hobies</a>
+        <a href="uc.html">Unity</a></span></span>
+<span class="mental"><button class="mental-button">Mental:</button><span class="mental-content">
+        <a href="uc.html">WorldWide</a>
+        <a href="uc.html">Locally</a>
+        <a href="uc.html">Lesson</a>
+        <a href="uc.html">Games</a>
+        <a href="uc.html">Solo</a></span></span>
+
+<!--- Top Star Link --->
+<a href="aou.pdf" target="_blank">
+<img class="star"src="look/astar.png" alt="A Greater Foundation" style="width:10vh; height:10vh;"></a>
+
+
+<br><br><br><br><br><br><br><br><br>
+
 
 <!--- Select Age Form--->
 <form align="center"><select id="age-select" class="FormOfAges" onchange="window.location.href=this.value;">
@@ -166,76 +199,99 @@ Foundations Of Universal<br>Health Care
             <option value="uc.html">&nbsp;&nbsp;098 Years Wiser</option>
             <option value="uc.html">&nbsp;099 Years Wiser</option>
             <option value="uc.html">The Centurian!</option>
-            </select></form></td></tr>
-</table>
+            </select></form>
+<br><br>
+<!--- Tonys Dancing Welcome  --->
+<span class="word-container" id="animated-text">Under Construction!</span>
+</td></tr></table>
 
-<!--- Bottom Text Table--->
+<!--- Active/Upcoming Table--->
+<table><tr><td><h2 align="center" style="text-decoration:underline wavy; font-size:5vw; color:lightblue">
+Active Links & Coming Soon:</h2>
 
-<table style="border:0px double white;"><tr><td>
-<!--- Left Image With Wrap--->
-<a href="index.html">
-<img class="pos-image" src="look/unity.png" alt="A giving of efforts." style="width:18vh;height:18vh;"></a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<span style="text-decoration: underline wavy;font-size: 4vw">We're&nbsp;Sorry!</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-This page is a work-site <span style="text-decoration: underline wavy;font-size:3vw; color:red;">
-"Under&nbsp;Construction."</span> We should have this area full of details soon enough. Please check our <a href="index.html">homepage</a> for the most recent updates or changes currently in progress. They will post there as things surely come together.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="index.html"><img class="vase" src="look/workin.gif" alt="United in love of health!" style="width:40%;height: 18vh;"></a>
-Get the latest information on current pages available, during this construction of completion. Also, you can inquire or contact us there about how you can get involved or participate by providing updated facts to our <a href="index.html">homepage,</a> that you know would be most helpful or more accurate to this record. It's going to take the work of many to conclude our efforts here, and we appreciate your patience with these great efforts undertaken.
+      <!--- Avtive - Left Table--->
+<table width="100%" border="1"><tr><td width="50%" style="vertical-align:top;"><h3 align="center">
+Live Links:</h3><ul>Star atop pyramid:<li><a href="aou.pdf" style="color:#4CAF50;">
+Assertion Of Unity</a></li><br>Age Drop Form:<li><a href="stage/005.html" style="color:#4CAF50;">
+005 Years Wiser</a></li><br>Unfinished Links:<li><a href="uc.html" style="color:#4CAF50;">
+Under Construction</a></li><br></ul></td>
 
-<!--- Subjective Texts--->
-<h2 id="ex" align="center">
-The Expectations:</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="look/hault.gif" style="width:100%;height:50vh;">
-
-<h2 id="in" align="center">
-The Interest:</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-
-<h2 id="mh" align="center">
-Mental Health:</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-   
-<h2 id="hd" align="center">
-Healthy Diet:</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-
-<h2 id="ez" align="center">
-The Exercising:</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
+      <!--- Upcoming - Right Table--->
+<td width="50%" style="vertical-align:top;"><h3 align="center">
+Coming Soon:</h3><ul><br><li><span style="color:#888;">
+Food Pyramid Links</span></li><br><li><span style="color:#888;">Red In 3D</span></li><br><li><span style="color:#888;">
+Interactive Content</span></li></ul>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html"><img src="look/workin.gif" alt="Skip Back Home" style="width:60%; height:12vh;"></a>
 </td></tr></table>
 
 
-<!--- Top Drop Menu Links --->
 
-<div class="resource">
-    <button class="resource-button">Resources:</button>                
-    <div class="resource-content">
-        <a href="uc.html">WorldWide</a>
-        <a href="uc.html">Locally</a>
-        <a href="uc.html">Lesson</a>
-        <a href="uc.html">Games</a>
-        <a href="uc.html">Solo</a>
-    </div>
-</div>
 
-<div class="Curriculum">
-    <button class="Curriculum-button">Curriculum:</button>                
-    <div class="Curriculum-content">
-        <a href="uc.html">WorldView</a>
-        <a href="uc.html">Local Gov</a>
-        <a href="uc.html">Schools</a>
-        <a href="uc.html">Hobies</a>
-        <a href="uc.html">Unity</a>
-    </div>
-</div>
+<!--- Word Blocks Text--->
+<!--- Left/Right Images With Wrap--->
+<a href="index.html">
+<img class="unity" src="look/sprout.png" alt="United in love of health!" style="width:20vh; height:20vh;"></a>&nbsp;
+
+<span style="text-decoration: underline wavy;font-size: 4vw">
+Technical&nbsp;&nbsp;Difficulties!</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This page is a work-site<br><center><span style="text-decoration:underline wavy; font-size:4.4vw; color:red;">
+"Under&nbsp;Construction!"</span></center>&nbsp;&nbsp;&nbsp;
+We should have this area full of details soon enough. Please see the list above for "Active Links" or check back to our <a href="index.html">homepage</a> often for all the most recent updates and changes currently in progress. They will post there as things surely come together.
+It may take us some time to get all these pages started without your help or input, so do be sure to contact us about what pages you are interested in reviewing. Then check back to the 
+<a href="index.html">homepage,</a> to see if it made the list. Also, if you have 
+<a href="index.html"><img src="look/unity.png" alt="A giving of efforts." style="width:40vw; height:18vh; float:right; margin-left:2px;"></a>
+any comments or more accurate information you can share. It's going to take the work of many to conclude our efforts here, and we appreciate your patience with these great efforts undertaken.
+<img src="look/hault.gif" style="width:100%;">
+<br><br>
+
+
+
+
+
+<h2 id="ex" align="center" style="text-decoration:overline wavy lightblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Expectations:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><br><br><br><br><br><br>
+
+<h2 id="in" align="center" style="text-decoration:overline wavy lightblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Interests:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><br><br><br><br><br><br>
+
+<h2 id="mh" align="center" style="text-decoration:overline wavy lightblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Mental Health:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><br><br><br><br><br><br>
+
+<h2 id="ez" align="center" style="text-decoration:overline wavy lightblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Physical Health:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><br><br><br><br><br><br>
+
+<h2 id="hd" align="center" style="text-decoration:overline wavy lightblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Healthy Diet:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><br><br><br><br><br><br>
+
+<h2 align="center" style="text-decoration:underline wavy lightblue;">&nbsp;&nbsp;
+Conclusions:&nbsp;&nbsp;</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p><br><br><br><br><br><br>
+
+<!--- Right Image With Wrap--->
+<a href="index.html"><img class="peace" src="look/homey.png" alt="Click Back Home!" style="width:40%; height:23vh;"></a>
+<h2 align="center" style="text-decoration: overline wavy lightblue;color: pink">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Contact Us:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+This website was inspired, designed and created by "Puff&nbsp;Of&nbsp;Smoke" productions. By initial webmaster "A.D.", and the site is now open for public input, for this record of useful facts. Once the initial stages are solidified and operational, every link will fulfill in finale. Created in 2025 from decades of attention and study, it could likely take years to fulfill with knowledge. Yet one step at a time will add up better than yesterday. If you would like to contact us with comments or suggestions, especially any unique facts to add upon any age, please feel free to e-mail us at...</p>
+<h2 align="center" style="text-decoration: underline lightblue;color: pink">
+delislesr(at)gmail(dot)com</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No automated messages or solicitations please. We believe the only automation necessary should be good health for every human, at every age! And we effort here a guide for you. So wish us luck!
+
+<h2 align="center">
+Thank You:</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...for your visit. It is truly this shared effort that wishes you a healthier and more fulfilling future.</p>
+<br><br><br><br>
+
+</td></tr></table>
 
 <!--- Tonys Bottom Links --->
 <a href="#top" class="hopAround jumpTop">&nbsp;&nbsp;Back Up Top!&nbsp;&nbsp;</a>
@@ -243,9 +299,11 @@ The Exercising:</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="#in" class="hopAround in">&nbsp;&nbsp;&nbsp;&nbsp;Interests&nbsp;&nbsp;&nbsp;&nbsp;</a>
 <a href="#mh" class="hopAround mh">&nbsp;&nbsp;Mental Health&nbsp;&nbsp;</a>
 <a href="#hd" class="hopAround hd">&nbsp;&nbsp;Healthy Diet&nbsp;&nbsp;</a>
-<a href="#ez" class="hopAround ez">&nbsp;&nbsp;&nbsp;&nbsp;Exercising&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<a href="#ez" class="hopAround ez">&nbsp;Physical Health&nbsp;</a>
 
-
-<!--- My Ghost Link Appearance --->
+<!--- The Ghost Bottom Link/Headliner/Dancing Text Appearances --->
 <script>document.addEventListener('DOMContentLoaded', function() {var jumpTopButton = document.querySelector('.jumpTop');window.addEventListener('scroll', function() {if (window.scrollY > 200) {jumpTopButton.style.display = 'block';} else {jumpTopButton.style.display = 'none';}}); jumpTopButton.addEventListener('click', function(e) {e.preventDefault();window.scrollTo({ top: 0,behavior: 'smooth'});});});</script>
-</body></html>
+<script>const headlines = ["Healthy Facts!","Age Relevant","By The Roots","A Living Website","Health Is Wealth","We Are Evolving","Workin' Progress","Lasting Rewards","Studying Seeds",];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
+<script>const textElement = document.getElementById('animated-text');const text = textElement.textContent;textElement.textContent = '';const animations = ['size-letter', 'spin-letter', 'jump-letter', 'spin-letter'];for (let i = 0; i < text.length; i++) {let span = document.createElement('span');span.textContent = text[i] === ' ' ? '\u00A0' : text[i];const animationClass = animations[i % animations.length];span.className = animationClass;textElement.appendChild(span);}</script>
+</body>
+</html>
