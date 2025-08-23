@@ -69,22 +69,23 @@
 
 <!--- Top Table Headline Banner --->
 <table style="width:100%; height:10vw; background-image:url('look/z.gif'); background-size:cover; background-position:center; border:8px double white; text-align:center;"><tr><td style="color:black; text-shadow:4px 4px 2px #ffffff;">
-<span id="dynamic-headline"></span>
+<a href="index.html" style="color:black">
+<span id="dynamic-headline"></span></a>
 </td></tr></table>
 
 <!--- Tonys Top Fancy Menus --->
 <span class="physical"><button class="physical-button">Physical:</button><span class="physical-content">
-        <a href="uc.html">WorldView</a>
-        <a href="uc.html">Local Gov</a>
-        <a href="uc.html">Schools</a>
-        <a href="uc.html">Hobies</a>
-        <a href="uc.html">Unity</a></span></span>
+        <a href="uc.html">Oral Care</a>
+        <a href="uc.html">Hygeane</a>
+        <a href="uc.html">Muscles</a>
+        <a href="uc.html">Bones</a>
+        <a href="uc.html">Diet</a></span></span>
 <span class="mental"><button class="mental-button">Mental:</button><span class="mental-content">
-        <a href="uc.html">WorldWide</a>
-        <a href="uc.html">Locally</a>
-        <a href="uc.html">Lesson</a>
-        <a href="uc.html">Games</a>
-        <a href="uc.html">Solo</a></span></span>
+        <a href="uc.html">Forsight</a>
+        <a href="uc.html">Masters</a>
+        <a href="uc.html">Spirit</a>
+        <a href="uc.html">Selfy</a>
+        <a href="uc.html">Gods</a></span></span>
 
 <!--- Top Star Link --->
 <a href="aou.pdf" target="_blank">
@@ -206,7 +207,7 @@
 </td></tr></table>
 
 <!--- Active/Upcoming Table--->
-<table><tr><td><h2 align="center" style="text-decoration:underline wavy; font-size:5vw; color:lightblue">
+<table><tr><td><h2 align="center" style="text-decoration:underline wavy; font-size:5vw; color:red">
 Active Links & Coming Soon:</h2>
 
       <!--- Avtive - Left Table--->
@@ -224,11 +225,7 @@ Interactive Content</span></li></ul>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="index.html"><img src="look/workin.gif" alt="Skip Back Home" style="width:60%; height:12vh;"></a>
 </td></tr></table>
 
-
-
-
-<!--- Word Blocks Text--->
-<!--- Left/Right Images With Wrap--->
+<!--- Tony's Word/Left/Right Images --->
 <a href="index.html">
 <img class="unity" src="look/sprout.png" alt="United in love of health!" style="width:20vh; height:20vh;"></a>&nbsp;
 
@@ -243,9 +240,6 @@ It may take us some time to get all these pages started without your help or inp
 any comments or more accurate information you can share. It's going to take the work of many to conclude our efforts here, and we appreciate your patience with these great efforts undertaken.
 <img src="look/hault.gif" style="width:100%;">
 <br><br>
-
-
-
 
 
 <h2 id="ex" align="center" style="text-decoration:overline wavy lightblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -303,7 +297,7 @@ Thank You:</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <!--- The Ghost Bottom Link/Headliner/Dancing Text Appearances --->
 <script>document.addEventListener('DOMContentLoaded', function() {var jumpTopButton = document.querySelector('.jumpTop');window.addEventListener('scroll', function() {if (window.scrollY > 200) {jumpTopButton.style.display = 'block';} else {jumpTopButton.style.display = 'none';}}); jumpTopButton.addEventListener('click', function(e) {e.preventDefault();window.scrollTo({ top: 0,behavior: 'smooth'});});});</script>
-<script>const headlines = ["Healthy Facts!","Age Relevant","By The Roots","A Living Website","Health Is Wealth","We Are Evolving","Workin' Progress","Lasting Rewards","Studying Seeds",];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
+<script>const headlines = ["Oops!, Our Bad?","Coming Soon","Healthy Facts!","Lasting Acts","Page By Page","The Living Wage","Health Is Wealth","All But Done","Workin' Progress", "2much Of None","Carving Code","Routing Roots","Not Much Fun","All Shoots!"];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
 <script>const textElement = document.getElementById('animated-text');const text = textElement.textContent;textElement.textContent = '';const animations = ['size-letter', 'spin-letter', 'jump-letter', 'spin-letter'];for (let i = 0; i < text.length; i++) {let span = document.createElement('span');span.textContent = text[i] === ' ' ? '\u00A0' : text[i];const animationClass = animations[i % animations.length];span.className = animationClass;textElement.appendChild(span);}</script>
 </body>
 </html>
