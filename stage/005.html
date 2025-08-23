@@ -36,7 +36,7 @@
 .jump-letter{animation:jump 1s infinite ease-out;}
 .spin-letter{animation:spin 2s infinite linear;}
 .size-letter{animation:size-change 1.5s infinite ease-in-out;}
-.word-container{font-size: 1.0rem; color:red; font-weight:100; letter-spacing:0.2rem;}
+.word-container{font-size: 2.0rem; color:black; font-weight:300; letter-spacing:0.2rem;}
 .word-container span{display:inline-block;}
 .FormOfAges{width:70vw; padding:10px; font-size:1em; border:2px solid white; background-color:rgba(128, 0, 0, 1.1); color:white; cursor:pointer; text-align:center;}
 .unity{float:left; margin-right:15px;}     
@@ -199,16 +199,15 @@
             <option value="uc.html">The Centurian!</option>
             </select></form>
 <br><br><br><br><br>
+
 <!--- Tonys Dancing Welcome  --->
-<span class="word-container" id="animated-text">Age Five!</span>
+<span class="word-container" id="animated-text">Milestone!</span>
 </td></tr></table>
 
-
 <!--- Word & Logo Images--->
-
 <!--- Left Image With Wrap--->
 <a href="index.html"><img class="unity" src="ages/5blocks.png" alt="A link back home." style="width:18vh;height:18vh;"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<span style="text-decoration: underline wavy;font-size: 5vw">Five Years Wise.</span>
+<span style="text-decoration:underline wavy; font-size:5vw; color:red;">Five Years Wise.</span>
 <br><p>&nbsp;&nbsp;&nbsp;
 This youthful age is looking for <span style="text-decoration:underline wavy; font-size:4vw; color:red;">
 simple,</span> powerful, and immediate rewards. The five-year-old's definition of "healthy" is having a body that can do amazing things and feel happy. This is our first attempt at narrowing down the fruits of our age pages.
@@ -216,7 +215,7 @@ Through the years we hope to evolve a far narrow focus to the essential needs of
 You can escape now by returning to our <a href="index.html">homepage</a>.
 </p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Age 5 is the first in many of these "milestone" ages we all go through, and a far greater foundational one of the utmost importance. We will find many expectations of the later years, lacking the foundational roots 
-<a href="index.html"><img src="ages/sprout.png" alt="United in love of health!" style="width:40vw; height:20vh; float:right; margin-left:2px;"></a>
+<a href="index.html"><img src="ages/sprout.png" alt="United in love of health!" style="width:40vw; height:21vh; float:right; margin-left:2px;"></a>
 of this one at age 5. We expect it to be dense, fundamental, and refered back to often. Still, forgive us that it may begin a mess here, with unorganized facts and directions. These will narrow down, and find their focus. Yet we make real this first attempt, to find the root healthy facts, that makes 5 years of humanly wise, lead to such long journeys of wide diversity. Amd what is the capabilities of humanity in this time? And how narrow is the science, to fostering a healthy physical and mental future from this year, of only five? 
 </p><br>
 
@@ -342,7 +341,7 @@ Thank You:</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <!--- The Ghost Bottom Link/Headliner/Dancing Text Appearances --->
 <script>document.addEventListener('DOMContentLoaded', function() {var jumpTopButton = document.querySelector('.jumpTop');window.addEventListener('scroll', function() {if (window.scrollY > 200) {jumpTopButton.style.display = 'block';} else {jumpTopButton.style.display = 'none';}}); jumpTopButton.addEventListener('click', function(e) {e.preventDefault();window.scrollTo({ top: 0,behavior: 'smooth'});});});</script>
-<script>const headlines = ["Oops!, Our Bad?","Coming Soon","Healthy Facts!","Lasting Acts","Page By Page","The Living Wage","Health Is Wealth","All But Done","Workin' Progress", "2much Of None","Carving Code","Routing Roots","Not Much Fun","All Shoots!"];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
+<script>const headlines = ["Alive! At Five","Younger Fears","Healthy Facts!","So Few Years","Big Changes","Awe Attacks","Short On Recall","2Small 2Fall","Able To All", "Unwise 2Rise","Dreams & Tries","Fragile Eyes","Tons Of Fun","Morphing Size"];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
 <script>const textElement = document.getElementById('animated-text');const text = textElement.textContent;textElement.textContent = '';const animations = ['size-letter', 'spin-letter', 'jump-letter', 'spin-letter'];for (let i = 0; i < text.length; i++) {let span = document.createElement('span');span.textContent = text[i] === ' ' ? '\u00A0' : text[i];const animationClass = animations[i % animations.length];span.className = animationClass;textElement.appendChild(span);}</script>
 </body>
 </html>
