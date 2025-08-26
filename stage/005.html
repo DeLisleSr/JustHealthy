@@ -38,26 +38,31 @@
 .size-letter{animation:size-change 1.5s infinite ease-in-out;}
 .word-container{font-size: 2.0rem; color:black; font-weight:300; letter-spacing:0.2rem;}
 .word-container span{display:inline-block;}
-.FormOfAges{width:70vw; padding:10px; font-size:1em; border:2px solid white; background-color:rgba(128, 0, 0, 1.1); color:white; cursor:pointer; text-align:center;}
+.FormOfAges{width:84vw; padding:10px; font-size:1.2em; border:4px solid black; background-color:rgba(255, 255, 255, 0.6); color:black; font-weight:bold; cursor:pointer; text-align:center;}
 .unity{float:left; margin-right:15px;}     
 .peace{float:right; margin-left:0px;}
-.star{position:absolute; top:24vw; right:31vw; border:0px solid; z-index:5;}
+.star{position:relative; top:0vw; right:0vw; border:0px solid; z-index:1;}
 
 .physical{position:absolute; top:17%; left:6%;}
-.physical-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(128, 0, 0, 1.1); color:white; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
-.physical-button:hover{background:rgba(128, 0, 0, 0.2); box-shadow:0 0 2em black,0 0 2em #fff; transform:scale(1.1);}
-.physical-content{display:none; position:absolute; background-color:#fff; min-width:2em; box-shadow:0 1em 2em 0 rgba(0,0,0,0.2); z-index:10; margin-top:1em;}
+.physical-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(255, 255, 255, 0.5); font-weight:bold; color:black; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
+.physical-button:hover{background:rgba(128, 0, 0, 0.6); color:white; box-shadow:0 0 2em black,0 0 2em #fff; transform:scale(1.1);}
+.physical-content{display:none; position:absolute; background-color:#fff; min-width:2em; box-shadow:0 1em 2em 0 rgba(0,0,0,0.8); z-index:10; margin-top:1em;}
 .physical:hover .physical-content{display:block;}
 .physical-content a{color:black; text-align:center; padding:1em 1.2em; text-decoration:none; display:block;}
-.physical-content a:hover{background-color:#ccc;}
+.physical-content a:hover{background-color:rgba(128, 0, 0, 0.8); color:white; font-weight:bold;}
 
 .mental{position:absolute; top:17%; right:6%;}
-.mental-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(128, 0, 0, 1.1); color:white; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
-.mental-button:hover{background:rgba(128, 0, 0, 0.2); box-shadow:0 0 2em black,0 0 2em #fff;transform: scale(1.1);}
-.mental-content{display:none; position:absolute; background-color:#fff; min-width:2em; box-shadow:0 1em 2em 0 rgba(0,0,0,0.2); z-index:10; margin-top:1em;}
+.mental-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(225, 225, 225, 0.5); font-weight:bold; color:black; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
+.mental-button:hover{background:rgba(128, 0, 0, 0.6); color:white; box-shadow:0 0 2em black,0 0 2em #fff;transform: scale(1.1);}
+.mental-content{display:none; position:absolute; background-color:#fff; min-width:2em; box-shadow:0 1em 2em 0 rgba(0,0,0,0.8); z-index:10; margin-top:1em;}
 .mental:hover .mental-content{display:block;}
 .mental-content a{color:black; text-align:center; padding:1em 1.2em; text-decoration:none; display:block;}
-.mental-content a:hover{background-color:#ccc;}
+.mental-content a:hover{background-color:rgba(128, 0, 0, 0.8); color:white; font-weight:bold;}
+.love{display:none; border:1px solid #ccc; padding:1em 1.2em; background-color:yellow; position:absolute; top:20%; right:110%;}
+.love a{color:#4b0082; font-weight:bold; text-decoration:none; display:block; padding:1em 1.2em;}
+.love a:hover{color:#f5f5dc; background-color:#4b0082;}
+.life:hover .love {display: block;}
+.life {display:block; position:relative; cursor:pointer; color:red; padding:1em 1.2em;}
 
 
 </style></head><body bgcolor="white" text="black">
@@ -80,21 +85,28 @@
         <a href="../uc.html">Muscles</a>
         <a href="../uc.html">Bones</a>
         <a href="../uc.html">Diet</a></span></span>
-<span class="mental"><button class="mental-button">Mental:</button><span class="mental-content">
-        <a href="../uc.html">&nbsp;Forsights&nbsp;</a>
-        <a href="../uc.html">Masters</a>
-        <a href="../uc.html">Spirit</a>
-        <a href="../uc.html">Selfy</a>
-        <a href="../uc.html">Gods</a></span></span>
 
-<!--- Top Star Link --->
-<a href="../aou.pdf" target="_blank">
-<img class="star"src="ages/5.gif" alt="A Greater Foundation" style="width:20vh; height:20vh;"></a>
 
+
+<!--- Tonys Fancier Third Menu --->
+<span class="mental"><button class="mental-button">Mental:</button>
+<span class="mental-content">
+<a href="../uc.html">&nbsp;&nbsp;&nbsp;Forsights&nbsp;&nbsp;&nbsp;</a>
+<span class="life">Masters
+<div class="love">
+<a href="../uc.html">Muhammad</a>
+<a href="../uc.html">Lao Tzu</a>
+<a href="../uc.html">Buddha</a>
+<a href="../uc.html">Krishna</a>
+<a href="../uc.html">Jesus</a>
+</div></span><a href="uc.html">Spirit</a>
+<a href="uc.html">Selfy</a>
+<a href="uc.html">Gods</a>
+</span></span>
 
 <!--- Select Age Form--->
 <form align="center"><select id="age-select" class="FormOfAges" onchange="window.location.href=this.value;">
-            <option value="">-- Choose Your Age Of Concern --</option>
+            <option value="">&blacktriangledown; Choose Your Age Of Concern &blacktriangledown;</option>
             <option value="../uc.html">Expecting Parents Of Love...</option>
             <option value="../uc.html">Congradulations... a Newborn!</option>
             <option value="../uc.html">001 Year Wise</option>
@@ -197,20 +209,15 @@
             <option value="../uc.html">&nbsp;&nbsp;098 Years Wiser</option>
             <option value="../uc.html">&nbsp;099 Years Wiser</option>
             <option value="../uc.html">The Centurian!</option>
-            </select></form>
-<br><br><br><br><br>
-
-<!--- Tonys Dancing Welcome  --->
-<span class="word-container" id="animated-text">Milestone!</span>
+            </select></form><a href="#bottom"><img class="star"src="ages/5.gif" alt="A Greater Foundation" style="width:15vh; height:15vh;"></a><br><span class="word-container" id="animated-text">Milestone!</span>
 </td></tr></table>
 
 <!--- Word & Logo Images--->
 <!--- Left Image With Wrap--->
 <a href="../index.html"><img class="unity" src="ages/5blocks.png" alt="A link back home." style="width:18vh;height:18vh;"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <span style="text-decoration:underline wavy; font-size:5vw; color:red;">Five Years Wise.</span>
-<br><p>&nbsp;&nbsp;&nbsp;
-This youthful age is looking for <span style="text-decoration:underline wavy; font-size:4vw; color:red;">
-simple,</span> powerful, and immediate rewards. The five-year-old's definition of "healthy" is having a body that can do amazing things and feel happy. This is our first attempt at narrowing down the fruits of our age pages.
+<br><p>&nbsp;&
+This youthful age is looking for simple, powerful, and immediate rewards. The five-year-old's definition of "healthy" is having a body that can do amazing things and feel happy. This is our first attempt at narrowing down the fruits of our age pages.
 Through the years we hope to evolve a far narrow focus to the essential needs of each specific age. Some of the most difficult ages to narrow will be these "milestone" ages. Those are years where great transitions take place in our personal evolutions. Healthy Facts of changes can truly overwhelm, like birth. 
 You can escape now by returning to our <a href="../index.html">homepage</a>.
 </p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -325,7 +332,7 @@ This website was inspired, designed and created by "Puff&nbsp;Of&nbsp;Smoke" pro
 <h2 align="center" style="text-decoration: underline lightblue;color: pink">
 delislesr(at)gmail(dot)com</h2><center>
 A "Puff Of Smoke" production.</center>
-<h2 align="center">
+<h2 id="bottom" align="center">
 Thank You:</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ...for your visit. It is truly this shared effort that wishes you a healthier and more fulfilling future.</p>
 <br><br><br><br>
