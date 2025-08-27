@@ -38,26 +38,31 @@
 .size-letter{animation:size-change 1.5s infinite ease-in-out;}
 .word-container{font-size: 1.6rem; color:green; font-weight:bold; letter-spacing:0.2rem;}
 .word-container span{display:inline-block;}
-.FormOfAges{width:70vw; padding:10px; font-size:1em; border:2px solid white; background-color:rgba(128, 0, 0, 1.1); color:white; cursor:pointer; text-align:center;}
+.FormOfAges{width:70vw; padding:10px; font-size:1em; border:2px solid black; background-color:rgba(0, 255, 0, 1.1); color:black; font-weight:bold;; cursor:pointer; text-align:center;}
 .unity{float:left; margin-right:15px;}     
 .peace{float:right; margin-left:0px;}
-.star{position:absolute; top:9vw; right:40vw; border:0px solid; z-index:5;}
+.star{position:absolute; top:8vh; left:43vw; border:0px solid; z-index:10;}
 
-.physical{position:absolute; top:15%; left:6%;}
-.physical-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(128, 0, 0, 1.1); color:white; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
-.physical-button:hover{background:rgba(128, 0, 0, 0.2); box-shadow:0 0 2em black,0 0 2em #fff; transform:scale(1.1);}
-.physical-content{display:none; position:absolute; background-color:#fff; min-width:2em; box-shadow:0 1em 2em 0 rgba(0,0,0,0.2); z-index:10; margin-top:1em;}
+.physical{position:absolute; top:11vh; left:6vw;}
+.physical-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(0, 255, 0, 1.1); color:black; font-weight:bold; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
+.physical-button:hover{background:rgba(255, 255, 0, 0.4); box-shadow:0 0 2em black,0 0 2em #fff; transform:scale(1.1);}
+.physical-content{display:none; position:absolute; background-color:rgba(255, 255, 0, 0.8); min-width:2em; box-shadow:0 1em 2em 0 rgba(0,0,0,0.2); z-index:10; margin-top:1em;}
 .physical:hover .physical-content{display:block;}
 .physical-content a{color:black; text-align:center; padding:1em 1.2em; text-decoration:none; display:block;}
 .physical-content a:hover{background-color:#ccc;}
 
-.mental{position:absolute; top:15%; right:6%;}
-.mental-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(128, 0, 0, 1.1); color:white; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
-.mental-button:hover{background:rgba(128, 0, 0, 0.2); box-shadow:0 0 2em black,0 0 2em #fff;transform: scale(1.1);}
-.mental-content{display:none; position:absolute; background-color:#fff; min-width:2em; box-shadow:0 1em 2em 0 rgba(0,0,0,0.2); z-index:10; margin-top:1em;}
+.mental{position:absolute; top:11vh; right:6vw;}
+.mental-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(0, 255, 0, 1.1); color:black; font-weight:bold; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
+.mental-button:hover{background:rgba(255, 255, 0, 0.4); box-shadow:0 0 2em black,0 0 2em #fff;transform: scale(1.1);}
+.mental-content{display:none; position:absolute; background-color:rgba(255, 255, 0, 0.8); min-width:2em; box-shadow:0 1em 2em 0 rgba(0,0,0,0.2); z-index:10; margin-top:1em;}
 .mental:hover .mental-content{display:block;}
 .mental-content a{color:black; text-align:center; padding:1em 1.2em; text-decoration:none; display:block;}
 .mental-content a:hover{background-color:#ccc;}
+.love{display:none; border:1px solid #ccc; padding:1em 1.2em; background-color:rgba(0, 255, 0, 1.0); position:absolute; top:20%; right:110%;}
+.love a{color:#4b0082; font-weight:bold; text-decoration:none; display:block; padding:1em 1.2em;}
+.love a:hover{color:#f5f5dc; background-color:#4b0082;}
+.life:hover .love {display: block;}
+.life {display:block; position:relative; cursor:pointer; color:red; padding:1em 1.2em;}
 
 
 </style></head><body bgcolor="white" text="black">
@@ -68,7 +73,7 @@
 
 
 <!--- Top Table Headline Banner --->
-<table style="width:100%; height:10vw; background-image:url('look/z.gif'); background-size:cover; background-position:center; border:8px double white; text-align:center;"><tr><td style="color:black; text-shadow:4px 4px 2px #ffffff;">
+<table style="width:100vw; height:10vh; background-image:url('look/z.gif'); background-size:cover; background-position:center; border:8px double white; text-align:center;"><tr><td style="color:black; text-shadow:4px 4px 2px #ffffff;">
 <a href="index.html" style="color:black">
 <span id="dynamic-headline"></span></a>
 </td></tr></table>
@@ -80,19 +85,28 @@
         <a href="uc.html">Muscles</a>
         <a href="uc.html">Bones</a>
         <a href="uc.html">Diet</a></span></span>
-<span class="mental"><button class="mental-button">Mental:</button><span class="mental-content">
-        <a href="uc.html">&nbsp;Forsights&nbsp;</a>
-        <a href="uc.html">Masters</a>
-        <a href="uc.html">Spirit</a>
-        <a href="uc.html">Selfy</a>
-        <a href="uc.html">Gods</a></span></span>
+
+<!--- Tonys Fancier Third Menu --->
+<span class="mental"><button class="mental-button">Mental:</button>
+<span class="mental-content">
+<a href="uc.html">&nbsp;&nbsp;&nbsp;Forsights&nbsp;&nbsp;&nbsp;</a>
+<span class="life">Masters
+<div class="love">
+<a href="uc.html">Muhammad</a>
+<a href="uc.html">Lao Tzu</a>
+<a href="uc.html">Buddha</a>
+<a href="uc.html">Krishna</a>
+<a href="uc.html">Jesus</a>
+</div></span><a href="uc.html">Spirit</a>
+<a href="uc.html">Selfy</a>
+<a href="uc.html">Gods</a>
+</span></span>
 
 <!--- Top Star Link --->
 <a href="aou.pdf" target="_blank">
-<img class="star"src="look/astar.png" alt="A Greater Foundation" style="width:10vh; height:10vh;"></a>
+<img class="star"src="look/astar.png" alt="A Greater Foundation" style="width:20vw; height:20vw;"></a>
 
-
-<br><br><br><br><br><br><br><br><br>
+<img src="look/z.gif" alt="Food for thought." style="width:100vw; height:24vh; z-index:1;}">
 
 
 <!--- Select Age Form--->
