@@ -19,63 +19,56 @@
 <style>
 /* A.D. ID's */
 
-.swirly{width:100%; border:1px; background-image:url('look/swirly.gif'); background-size:cover; background-position:center;}
-.hopAround{position:fixed; background-color:red; color:white; padding:1vw 1.5vw; border-radius:50%; text-decoration:none; font-size: 2.6vw; box-shadow:0 0 0.5vw rgba(0, 0, 0, 0.5); transition:background-color 0.3s ease, box-shadow 0.3s ease;}
-.hopAround:hover{box-shadow:0 0 1vw yellow, 0 0 2vw rgba(255, 255, 0, 0.8);}
+.floormat{width:100%; border:0px; background-image:url('look/swirly.gif'); background-size:cover; background-position:center;}
 .jumpTop{position:fixed; bottom:18vw; left:50%; transform:translateX(-50%); display:none;}
-.ex {bottom:10vw; left:20vw;}
-.in {bottom:10vw; right:20vw;}
-.mh {bottom:2vw; left:2vw;}
-.ez {bottom:2vw; right:2vw;}
-.hd {position:fixed; bottom:2vw; left: 50%; transform:translateX(-50%);}
-
-#dynamic-headline{text-align:center; vertical-align:middle; height:1.5em; font-size:2.4rem; font-weight:bold; color:; transition:opacity 0.5s ease-in-out;}
-@keyframes jump{0%{transform:translateY(0);}50%{transform:translateY(-20px);}100%{transform: translateY(0);}}
-@keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
-@keyframes size-change{0%,100%{transform:scale(1);}50%{transform:scale(1.5);}}
+.hopAround{position:fixed; background-color:red; color:white; padding:1vw 1.5vw; border-radius:50%; text-decoration:none; font-size:0.8rem; box-shadow:0 0 0.5vw rgba(0, 0, 0, 0.5); transition:background-color 0.8s ease, box-shadow 0.8s ease;}
+.hopAround:hover{background-color:black; box-shadow:0 0 6vw yellow; color:yellow; font-weight:bold;}
+.hd{position:fixed; bottom:2vw; left:50%; transform:translateX(-50%);}.ex{bottom:10vw; left:20vw;}.in{bottom:10vw; right:20vw;}.mh{bottom:2vw; left:2vw;}.ez{bottom:2vw; right:2vw;}
+#Tonys-headline{text-align:center; vertical-align:middle; font-size:2.6rem; font-weight:bold; color:black; transition:opacity 0.6s ease-in-out;}
+.flipMode{font-size:3.6rem; color:red; font-weight:bold; letter-spacing:0.2rem;}
+.flipMode span{display:inline-block;}
 .jump-letter{animation:jump 1s infinite ease-out;}
 .spin-letter{animation:spin 2s infinite linear;}
 .size-letter{animation:size-change 1.5s infinite ease-in-out;}
-.word-container{font-size: 3.6rem; color:red; font-weight:bold; letter-spacing:0.2rem;}
-.word-container span{display:inline-block;}
-.FormOfAges{width:90vw; padding:10px; font-size:1.2em; border:4px solid black; background-color:rgba(128, 0, 0, 1.1); color:white; font-weight:bold; cursor:pointer; text-align:center;}
+@keyframes jump{0%{transform:translateY(0);}50%{transform:translateY(-20px);}100%{transform:translateY(0);}}
+@keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+@keyframes size-change{0%,100%{transform:scale(1);}50%{transform:scale(1.5);}}
+.FormOfAges{width:94vw; padding:10px; font-size:1.2rem; border:4px solid white; background-color:rgba(0, 0, 0, 1.0); color:white; font-weight:bold; cursor:pointer; text-align:center;}
 .unity{float:left; margin-right:15px;}     
 .peace{float:right; margin-left:0px;}
-.star{position:absolute; top:16vw; right:42vw; border:0px solid; z-index:5;}
-
-.physical{position:absolute; top:15%; left:6%;}
-.physical-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(128, 0, 0, 1.1); color:white; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
-.physical-button:hover{background:rgba(128, 0, 0, 0.2); box-shadow:0 0 2em black,0 0 2em #fff; transform:scale(1.1);}
-.physical-content{display:none; position:absolute; background-color:#fff; min-width:2em; box-shadow:0 1em 2em 0 rgba(0,0,0,0.2); z-index:10; margin-top:1em;}
-.physical:hover .physical-content{display:block;}
-.physical-content a{color:black; text-align:center; padding:1em 1.2em; text-decoration:none; display:block;}
-.physical-content a:hover{background-color:#ccc;}
-
-.mental{position:absolute; top:15%; right:6%;}
-.mental-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(128, 0, 0, 1.1); color:white; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
-.mental-button:hover{background:rgba(128, 0, 0, 0.2); box-shadow:0 0 2em black,0 0 2em #fff;transform: scale(1.1);}
-.mental-content{display:none; position:absolute; background-color:#fff; min-width:2em; box-shadow:0 1em 2em 0 rgba(0,0,0,0.2); z-index:10; margin-top:1em; text-align:center;}
-.mental:hover .mental-content{display:block;}
-.mental-content a{color:black; text-align:center; padding:1em 1.2em; text-decoration:none; display:block;}
-.mental-content a:hover{background-color:#ccc;}
-.love{display:none; border:1px solid #ccc; padding:1em 1.2em; background-color:yellow; position:absolute; top:20%; right:110%;}
-.love a{color:#4b0082; font-weight:bold; text-decoration:none; display:block; padding:1em 1.2em;}
-.love a:hover{color:#f5f5dc; background-color:#4b0082;}
+.star{position:absolute; top:10vh; left:39vw; border:0px; z-index:10;}
+.love{display:none; border:1px solid #ccc; padding:1rem 1.2rem; background-color:yellow; position:absolute; top:20%; right:110%;}
+.love a{color:#4b0082; font-weight:bold; text-decoration:none; display:block; padding:1rem 1.2rem;}
+.love a:hover{color:red; background-color:yellow;}
 .life:hover .love {display: block;}
-.life {display:block; position:relative; cursor:pointer; color:red; padding:1em 1.2em;}
+.life {display:block; position:relative; cursor:pointer; color:red; padding:1rem 1.2rem;}
+.physical{position:absolute; top:15vh; left:6vw;}
+.physical-button{display:flex; align-items:center; justify-content:center; width:10rem; height:3rem; border-radius:5rem; background:rgba(128, 0, 0, 1.1); color:white; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1rem rgba(0,0,0, 0.5);}
+.physical-button:hover{background:rgba(128, 0, 0, 0.2); box-shadow:0 0 2rem black,0 0 2rem #fff; transform:scale(1.1);}
+.physical-content{display:none; position:absolute; background-color:#fff; min-width:2rem; box-shadow:0 1rem 2rem 0 rgba(0,0,0,0.2); z-index:10; margin-top:1rem;}
+.physical:hover .physical-content{display:block;}
+.physical-content a{color:black; text-align:center; padding:1rem 1.2rem; text-decoration:none; display:block;}
+.physical-content a:hover{background-color:#ccc;}
+.mental{position:absolute; top:15vh; right:6vw;}
+.mental-button{display:flex; align-items:center; justify-content:center; width:10rem; height:3rem; border-radius:5rem; background:rgba(128, 0, 0, 1.1); color:white; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1rem rgba(0,0,0, 0.5);}
+.mental-button:hover{background:rgba(128, 0, 0, 0.2); box-shadow:0 0 2rem black,0 0 2rem #fff;transform: scale(1.1);}
+.mental-content{display:none; position:absolute; background-color:#fff; min-width:2rem; box-shadow:0 1rem 2rem 0 rgba(0,0,0,0.2); z-index:10; margin-top:1rem;}
+.mental:hover .mental-content{display:block;}
+.mental-content a{color:black; text-align:center; padding:1rem 1.2rem; text-decoration:none; display:block;}
+.mental-content a:hover{background-color:#ccc;}
 </style></head><body bgcolor="black" text="white">
 
 
 <!--- Tonys Main Table Setup --->
-<table class="swirly"><tr><td align="center" style="vertical-align:top">
+<table class="floormat"><tr><td align="center" style="vertical-align:top">
 
 
 <!--- Top Table Headline Banner --->
-<table style="width:100%; height:10vw; background-image:url('look/scroll.gif'); background-size:cover; background-position:center; border:8px double white; text-align:center;"><tr><td style="color:black; text-shadow:4px 4px 2px #ffffff;">
-<span id="dynamic-headline"></span>
+<table style="width:100%; height:10vh; background-image:url('look/scroll.gif'); background-size:cover; background-position:center; border:8px double white; text-align:center;"><tr><td style="color:black; text-shadow:4px 4px 2px #ffffff;">
+<span id="Tonys-headline"></span>
 </td></tr></table>
 
-<!--- Tonys Top Fancy Menus --->
+<!--- Tonys Top Fancy Menu --->
 <span class="physical"><button class="physical-button">Physical:</button><span class="physical-content">
         <a href="uc.html">&nbsp;&nbsp;&nbsp;Oral&nbsp;Care&nbsp;&nbsp;&nbsp;</a>
         <a href="uc.html">Hygienic</a>
@@ -101,39 +94,39 @@
 
 <!--- Top Star Link --->
 <a href="aou.pdf" target="_blank">
-<img class="star"src="look/astar.png" alt="A Greater Foundation" style="width:10vh; height:10vh;"></a>
+<img class="star"src="look/astar.png" alt="A Greater Foundation" style="width:20vw; height:20vw;"></a>
 
 <br><br>
 <!--- Food Pyramid Table --->
-<table style="width:100%;height:52vh;background-image:url('look/healthy.png');background-size:cover;background-position:center;"><tbody>
+<table style="width:100%;height:54vh;background-image:url('look/healthy.png');background-size:cover;background-position:center;"><tbody>
 
 <tr><td colspan="2" width="100%">
 <a href="uc.html">
-<img src="look/z.gif" alt="POS" style="width:100%; height:22vw; border:0px double white;">
+<img src="look/z.png" alt="POS" style="width:98%; height:12vh; border:0px">
 </a></td></tr>
 
 <tr><td width="50%">
 <a href="uc.html">
-<img src="look/z.gif" alt="POS" style="width:100%; height:22vw; border:0px double white;">
+<img src="look/z.png" alt="POS" style="width:98%; height:11vh; border:0px;">
 </a></td>
 
 <td width="50%">
 <a href="uc.html">
-<img src="look/z.gif" alt="POS" style="width:100%; height:22vw; border:0px double white;">
+<img src="look/z.png" alt="POS" style="width:95%; height:11vh; border:0px">
 </a></td></tr>
 
 <tr><td width="50%">
 <a href="uc.html">
-<img src="look/z.gif" alt="POS" style="width:100%; height:23vw; border:0px double white;">
+<img src="look/z.png" alt="POS" style="width:98%; height:13vh; border:0px;">
 </a></td>
 
 <td width="50%"> <a href="uc.html">
-<img src="look/z.gif" alt="POS" style="width:100%; height:23vw; border:0px double white;">
+<img src="look/z.png" alt="POS" style="width:95%; height:13vh; border:0px;">
 </a></td></tr>
 
 <tr><td colspan="2" width="100%">
 <a href="uc.html">
-<img src="look/z.gif" alt="POS" style="width:100%; height:23vw; border:0px double white;">
+<img src="look/z.png" alt="POS" style="width:98%; height:12vh; border:2px">
 </a></td></tr>
 </tbody></table>
 
@@ -245,7 +238,7 @@
             </select></form>
 
 <!--- Tonys Dancing Welcome  --->
-<span class="word-container" id="animated-text">Welcome!</span>
+<span class="flipMode" id="animated-text">Welcome!</span>
 </td></tr></table>
 
 <!--- Active/Upcoming Table--->
@@ -332,7 +325,7 @@ Thank You:</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <!--- The Ghost Bottom Link/Headliner/Dancing Text Appearances --->
 <script>document.addEventListener('DOMContentLoaded', function() {var jumpTopButton = document.querySelector('.jumpTop');window.addEventListener('scroll', function() {if (window.scrollY > 200) {jumpTopButton.style.display = 'block';} else {jumpTopButton.style.display = 'none';}}); jumpTopButton.addEventListener('click', function(e) {e.preventDefault();window.scrollTo({ top: 0,behavior: 'smooth'});});});</script>
-<script>const headlines = ["Healthy Facts!","Age Relevant","By The Roots","A Living Website","Health Is Wealth","We Are Evolving","Workin' Progress","Lasting Rewards","Studying Seeds",];let index = 0;const headlineElement = document.getElementById('dynamic-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
+<script>const headlines = ["Healthy Facts!","Age Relevant","By The Roots","A Living Website","Health Is Wealth","We Are Evolving","Workin' Progress","Lasting Rewards","Studying Seeds",];let index = 0;const headlineElement = document.getElementById('Tonys-headline');function changeHeadline() {headlineElement.style.opacity = 0;setTimeout(() => {headlineElement.textContent = headlines[index];headlineElement.style.opacity = 1;index = (index + 1) % headlines.length;}, 500);}setInterval(changeHeadline, 3000);changeHeadline();</script>
 <script>const textElement = document.getElementById('animated-text');const text = textElement.textContent;textElement.textContent = '';const animations = ['size-letter', 'spin-letter', 'jump-letter', 'spin-letter'];for (let i = 0; i < text.length; i++) {let span = document.createElement('span');span.textContent = text[i] === ' ' ? '\u00A0' : text[i];const animationClass = animations[i % animations.length];span.className = animationClass;textElement.appendChild(span);}</script>
 </body>
 </html>
