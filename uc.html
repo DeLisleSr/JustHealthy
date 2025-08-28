@@ -19,7 +19,7 @@
 <style>
 /* A.D. ID's */
 
-.swirly{width:100%; border:1px; background-image:url('look/home.png'); background-size:cover; background-position:center;}
+.swirly{width:100%; border:1px; background-image:url('look/ucbg.png'); background-size:cover; background-position:center;}
 .hopAround{position:fixed; background-color:black; color:white; padding:1vw 1.5vw; border-radius:50%; text-decoration:none; font-size: 2.6vw; box-shadow:0 0 0.5vw rgba(0, 0, 0, 0.5); transition:background-color 0.3s ease, box-shadow 0.3s ease;}
 .hopAround:hover{box-shadow:0 0 1vw yellow, 0 0 2vw rgba(255, 255, 0, 0.8);}
 .jumpTop{position:fixed; bottom:18vw; left:50%; transform:translateX(-50%); display:none;}
@@ -36,12 +36,12 @@
 .jump-letter{animation:jump 1s infinite ease-out;}
 .spin-letter{animation:spin 2s infinite linear;}
 .size-letter{animation:size-change 1.5s infinite ease-in-out;}
-.word-container{font-size: 1.6rem; color:green; font-weight:bold; letter-spacing:0.2rem;}
+.word-container{font-size: 1.9rem; color:green; font-weight:bold; letter-spacing:0.2rem;}
 .word-container span{display:inline-block;}
-.FormOfAges{width:70vw; padding:10px; font-size:1em; border:2px solid black; background-color:rgba(0, 255, 0, 1.1); color:black; font-weight:bold;; cursor:pointer; text-align:center;}
+.FormOfAges{width:50vw; padding:10px; font-size:1rem; border:2px solid black; background-color:rgba(0, 255, 0, 1.1); color:black; font-weight:bold; cursor:pointer; text-align:center;}
 .unity{float:left; margin-right:15px;}     
 .peace{float:right; margin-left:0px;}
-.star{position:absolute; top:8vh; left:43vw; border:0px solid; z-index:10;}
+.star{position:absolute; top:8vh; left:42.5vw; border:0px solid; z-index:10;}
 
 .physical{position:absolute; top:11vh; left:6vw;}
 .physical-button{display:flex; align-items:center; justify-content:center; width:10em; height:3em; border-radius:5em; background:rgba(0, 255, 0, 1.1); color:black; font-weight:bold; text-decoration:none; text-align:center; transition:all 0.3s ease; box-shadow:0 0 1em rgba(0,0,0, 0.5);}
@@ -73,7 +73,7 @@
 
 
 <!--- Top Table Headline Banner --->
-<table style="width:100vw; height:10vh; background-image:url('look/z.gif'); background-size:cover; background-position:center; border:8px double white; text-align:center;"><tr><td style="color:black; text-shadow:4px 4px 2px #ffffff;">
+<table style="width:100vw; height:10vh; background-image:url('look/z.gif'); background-size:cover; background-position:center; border:0px; text-align:center;"><tr><td style="color:black; text-shadow:4px 4px 2px #ffffff;">
 <a href="index.html" style="color:black">
 <span id="dynamic-headline"></span></a>
 </td></tr></table>
@@ -104,14 +104,14 @@
 
 <!--- Top Star Link --->
 <a href="aou.pdf" target="_blank">
-<img class="star"src="look/astar.png" alt="A Greater Foundation" style="width:20vw; height:20vw;"></a>
+<img class="star"src="look/astar.png" alt="A Greater Foundation" style="width:20vw;"></a>
 
-<img src="look/z.gif" alt="Food for thought." style="width:100vw; height:24vh; z-index:1;}">
+<img src="look/z.gif" alt="Food for thought." style="width:100vw; height:20vh; z-index:1;}">
 
 
 <!--- Select Age Form--->
 <form align="center"><select id="age-select" class="FormOfAges" onchange="window.location.href=this.value;">
-            <option value="">-- Choose Your Age Of Concern --</option>
+            <option value="">&blacktriangledown; Ages Of Concern </option>
             <option value="uc.html">Expecting Parents Of Love...</option>
             <option value="uc.html">Congradulations... a Newborn!</option>
             <option value="uc.html">001 Year Wise</option>
